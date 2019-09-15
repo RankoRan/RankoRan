@@ -8,6 +8,9 @@ public class v37{
 		System.out.println("Vad heter du?");
 		String name = scan.next();
 		
+		System.out.println("Hur gammal är du?");
+		String age = scan.next();
+		
 		
 	}
 }
