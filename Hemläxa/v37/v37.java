@@ -11,6 +11,16 @@ public class v37{
 		System.out.println("Hur gammal är du?");
 		String age = scan.next();
 		
+		System.out.println("Vad är din adress");
+		String adress = scan.next();
 		
+		System.out.println("Vad är ditt postnummer?");
+		String postnummer = scan.next();
+		
+		System.out.println("Vilken stad bor du i?");
+		String stad = scan.next();
+		
+		System.out.println("Vad är ditt telefonnummer?");
+		String telefon = scan.next();
 	}
 }
