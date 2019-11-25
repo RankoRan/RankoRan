@@ -17,6 +17,8 @@ public class Uppgift {
 		System.out.println(kineticEnergy(2,2));
 		System.out.println(potentialEnergy(2,5));
 		System.out.println(fallSpeed(2.5));
+		System.out.println(delta(1,10));
+		System.out.println(delta(5,1));
 
 }
 
@@ -67,6 +69,13 @@ public class Uppgift {
 		double fallSpeed = Math.sqrt((2*height) / g_swe) * g_swe;
 		
 		return fallSpeed;
+	}
+	
+	public static double delta(double first, double last) {
+		
+		double delta = last - first;
+		
+		return delta;
 	}
 	
 }
