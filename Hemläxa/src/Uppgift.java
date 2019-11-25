@@ -16,6 +16,7 @@ public class Uppgift {
 		System.out.println(pressureUnderWater(10));
 		System.out.println(kineticEnergy(2,2));
 		System.out.println(potentialEnergy(2,5));
+		System.out.println(fallSpeed(2.5));
 
 }
 
@@ -59,6 +60,13 @@ public class Uppgift {
 		double potentialEnergy = mass * g_swe * height;
 		
 		return potentialEnergy;
+	}
+	
+	public static double fallSpeed(double height) {
+		
+		double fallSpeed = Math.sqrt((2*height) / g_swe) * g_swe;
+		
+		return fallSpeed;
 	}
 	
 }
