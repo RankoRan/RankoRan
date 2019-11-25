@@ -12,8 +12,10 @@ public class Uppgift {
 		
 		System.out.println(fahrenheitToCelsius(50));
 		System.out.println(kelvinToCelsius(0));
+		System.out.println(fluidPressure(FluidTable.WATER, 10));
 		System.out.println(pressureUnderWater(10));
 		System.out.println(kineticEnergy(2,2));
+		System.out.println(potentialEnergy(2,5));
 
 }
 
@@ -50,6 +52,13 @@ public class Uppgift {
 		double kineticEnergy = 0.5 * mass * (Math.pow(velocity, 2));
 		
 		return kineticEnergy;
+	}
+	
+	public static double potentialEnergy(double mass, double height) {
+		
+		double potentialEnergy = mass * g_swe * height;
+		
+		return potentialEnergy;
 	}
 	
 }
