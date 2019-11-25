@@ -20,6 +20,7 @@ public class Uppgift {
 		System.out.println(delta(1,10));
 		System.out.println(delta(5,1));
 		System.out.println(volumeToMass(FluidTable.WATER,1));
+		System.out.println(volumeToMass(GasTable.AIR,1));
 
 }
 
@@ -82,6 +83,13 @@ public class Uppgift {
 	public static double volumeToMass(FluidTable fluid, double volume) {
 		
 		double volumeToMass = fluid.density * volume;
+		
+		return volumeToMass;
+	}
+	
+	public static double volumeToMass(GasTable gas, double volume) {
+		
+		double volumeToMass = gas.density * volume;
 		
 		return volumeToMass;
 	}
