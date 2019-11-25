@@ -10,7 +10,10 @@ public class Uppgift {
 	
 	public static void main(String[] args) {
 		
+		System.out.println(fahrenheitToCelsius(50));
 		System.out.println(kelvinToCelsius(0));
+		System.out.println(pressureUnderWater(10));
+		System.out.println(kineticEnergy(2,2));
 
 }
 
@@ -26,13 +29,27 @@ public class Uppgift {
 		return celsius;
 	}
 	
-	public static double fluidPressure(Fluidtable fluid, double deep) {
+	public static double fluidPressure(FluidTable fluid, double deep) {
 		
 		double Pressure = 0;
 		Pressure = fluid.density*g_swe*deep;
 		
 		return Pressure;
 		
+	}
+	
+	public static double pressureUnderWater(double deep) {
+		
+		double WaterPressure = FluidTable.WATER.density*g_swe*deep;
+		
+		return WaterPressure;
+	}
+	
+	public static double kineticEnergy(double mass, double velocity) {
+		
+		double kineticEnergy = 0.5 * mass * (Math.pow(velocity, 2));
+		
+		return kineticEnergy;
 	}
 	
 }
