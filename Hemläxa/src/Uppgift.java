@@ -21,6 +21,7 @@ public class Uppgift {
 		System.out.println(delta(5,1));
 		System.out.println(volumeToMass(FluidTable.WATER,1));
 		System.out.println(volumeToMass(GasTable.AIR,1));
+		System.out.println(volumeToMass(SolidTable.IRON,1));
 
 }
 
@@ -93,5 +94,15 @@ public class Uppgift {
 		
 		return volumeToMass;
 	}
+	
+	public static double volumeToMass(SolidTable solid, double volume) {
+		
+		double volumeToMass = solid.density * volume; 
+		
+		return volumeToMass;
+		
+	}
+	
+	
 	
 }
