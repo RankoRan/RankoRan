@@ -27,6 +27,7 @@ public class Uppgift {
 		System.out.println(svtTime(10,2));
 		System.out.println(work(50,10));
 		System.out.println(power(1000,2));
+		System.out.println(heat(SolidTable.IRON,1,2));
 }
 
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -140,5 +141,12 @@ public class Uppgift {
 		double power = work/time;
 		
 		return power;
+	}
+	
+	public static double heat(SolidTable solid, double mass, double deltaT) {
+		
+		double heat = solid.heatCapacity*mass*deltaT;
+		
+		return heat;
 	}
 }
