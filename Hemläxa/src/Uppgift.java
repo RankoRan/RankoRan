@@ -23,6 +23,7 @@ public class Uppgift {
 		System.out.println(volumeToMass(GasTable.AIR,1));
 		System.out.println(volumeToMass(SolidTable.IRON,1));
 		System.out.println(svtVelocity(10,5));
+		System.out.println(svtDistance(10,5));
 
 }
 
@@ -109,6 +110,13 @@ public class Uppgift {
 		double svtVelocity = distance/time;
 		
 		return svtVelocity;
+	}
+	
+	public static double svtDistance(double velocity, double time) {
+	
+		double svtDistance = velocity*time;
+		
+		return svtDistance;
 	}
 	
 	
