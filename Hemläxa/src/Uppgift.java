@@ -26,6 +26,7 @@ public class Uppgift {
 		System.out.println(svtDistance(10,5));
 		System.out.println(svtTime(10,2));
 		System.out.println(work(50,10));
+		System.out.println(power(1000,2));
 }
 
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -132,5 +133,12 @@ public class Uppgift {
 		double work = force*distance;
 		
 		return work;
+	}
+	
+	public static double power(double work, double time) {
+		
+		double power = work/time;
+		
+		return power;
 	}
 }
