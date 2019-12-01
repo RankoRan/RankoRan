@@ -30,6 +30,7 @@ public class Uppgift {
 		System.out.println(heat(SolidTable.IRON,1,2));
 		System.out.println(heat(FluidTable.WATER,1,10));
 		System.out.println(heat(GasTable.AIR,1,1));
+		System.out.println(velocityToHeight(9.82));
 }
 
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -165,4 +166,12 @@ public class Uppgift {
 		
 		return heat;
 	}
+	
+	public static double velocityToHeight(double velocity) {
+		
+		double velocityToHeight = (Math.pow(Math.sin(1.570596),2)*Math.pow(velocity,2))/(2*g_swe);
+		
+		return velocityToHeight;
+	}
+	
 }
