@@ -29,6 +29,7 @@ public class Uppgift {
 		System.out.println(power(1000,2));
 		System.out.println(heat(SolidTable.IRON,1,2));
 		System.out.println(heat(FluidTable.WATER,1,10));
+		System.out.println(heat(GasTable.AIR,1,1));
 }
 
 	public static double fahrenheitToCelsius(double fahrenheit) {
@@ -154,6 +155,13 @@ public class Uppgift {
 	public static double heat(FluidTable fluid, double mass, double deltaT) {
 		
 		double heat = fluid.heatCapacity*mass*deltaT;
+		
+		return heat;
+	}
+	
+	public static double heat(GasTable gas, double mass, double deltaT) {
+		
+		double heat = gas.heatCapacity*mass*deltaT;
 		
 		return heat;
 	}
